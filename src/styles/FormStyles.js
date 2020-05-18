@@ -1,5 +1,4 @@
 const styles = theme => (
-  console.log(theme.palette.grey.A700),
   {
   main: {
     width: "auto",
