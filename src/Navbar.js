@@ -9,6 +9,7 @@ import Switch from "@material-ui/core/Switch";
 import { withStyles } from "@material-ui/core/styles";
 import styles from "./styles/NavBarStyles";
 import { ThemeContext } from './context/ThemeContext';
+import { withLanguageContext } from './context/LanguageContext';
 
 class Navbar extends Component {
   static contextType = ThemeContext;
@@ -45,4 +46,4 @@ class Navbar extends Component {
     );
   }
 }
-export default withStyles(styles)(Navbar);
+export default withLanguageContext(withStyles(styles)(Navbar));

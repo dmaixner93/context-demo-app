@@ -1,4 +1,6 @@
-const styles = theme => ({
+const styles = theme => (
+  console.log(theme.palette.grey.A700),
+  {
   main: {
     width: "auto",
     display: "block",
@@ -30,4 +32,5 @@ const styles = theme => ({
     marginTop: theme.spacing.unit * 3
   }
 });
+
 export default styles;
